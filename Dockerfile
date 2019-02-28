@@ -10,9 +10,9 @@ RUN apt-get update \
         && apt-get autoremove -y \
         && rm -rf /var/lib/{apt,dpkg,cache,log}/
 # Bad JUJU, fix this!
-RUN chmod 777 -R /home/steam/steamcmd
+RUN chmod 777 -R /home/steam/
 RUN useradd -m scp
-USER scp
+# USER scp
 RUN mkdir -p "/home/scp/scp_server"
 ENV EXECUTABLE "/home/steam/steamcmd"
 ENV STEAM_USERNAME "anonymous"
