@@ -1,8 +1,6 @@
 # An image with a command line interface for steam
 FROM cm2network/steamcmd
 MAINTAINER t3l3ltubie
-USER steam
-RUN chmod 755 /home/steam/steamcmd
 USER root
 WORKDIR /home/steam
 RUN apt-get update \
@@ -11,6 +9,8 @@ RUN apt-get update \
         && apt-get clean autoclean \
         && apt-get autoremove -y \
         && rm -rf /var/lib/{apt,dpkg,cache,log}/
+# Bad JUJU, fix this!
+RUN chmod 777 -R /home/steam/steamcmd
 RUN useradd -m scp
 USER scp
 RUN mkdir -p "/home/scp/scp_server"
