@@ -19,7 +19,7 @@ ENV STEAM_USERNAME "anonymous"
 ENV FORCE_INSTALL_DIR "/home/scp/scp_server"
 ENV APPID "786920 -beta beta"
 ENV VALIDATE "validate"
-RUN sudo $EXECUTABLE \
+RUN $EXECUTABLE \
 +login $STEAM_USERNAME \
 +force_install_dir $FORCE_INSTALL_DIR \
 +app_update $APPID $VALIDATE \
