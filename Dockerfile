@@ -19,6 +19,7 @@ RUN set -x \
                               wget \
                                    ca-certificates \
                                    && useradd -m steam \
+
                                    && su steam -c \
                                       "mkdir -p /home/steam/steamcmd \
                                              && cd /home/steam/steamcmd \
@@ -41,6 +42,13 @@ RUN mkdir -p "/home/scp/scp_server"
 ENV EXECUTABLE "/home/steam/steamcmd/steamcmd.sh"
 ENV STEAM_USERNAME "anonymous"
 ENV FORCE_INSTALL_DIR "/home/scp/scp_server"
+# 700330 is base game
+# https://steamdb.info/app/700330/
+# 786920 is multiadmin+servermod
+# https://steamdb.info/app/786920/
+# 996560 is dedicated server
+# https://steamdb.info/app/996560/
+
 ENV APPID "786920 -beta linux"
 ENV VALIDATE "validate"
 RUN chmod 777 -R /home/scp/
@@ -49,6 +57,8 @@ RUN $EXECUTABLE \
 +force_install_dir $FORCE_INSTALL_DIR \
 +app_update $APPID $VALIDATE \
 +quit
+
+
 RUN mkdir -p /home/steam/scp_server/servers/server1/
 WORKDIR /home/scp/scp_server
 
