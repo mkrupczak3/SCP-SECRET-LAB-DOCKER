@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  scpsl:
+    container_name: scpsl
+    image: t3l3tubie/scpsl:latest
+    restart: unless-stopped
+    ports:
+      - "7777-7784:7777-7784/udp"
+      - "7777-7784:7777-7784"
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - ${MOUNT_POINT}/scpsl/steamcmd:/home/steam/steamcmd
+      - ${MOUNT_POINT}/scpsl/scp_server:/home/steam/scp_server
+
