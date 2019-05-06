@@ -11,6 +11,7 @@ Requires docker-compose installed to use the docker-compose file for running
 
 MOUNT_POINT=/mount/path/here docker-compose up -d
 
+
 # Contributing
 Pull requests with updated or alternate dockerfile(s), compose files, or implementation tips are absolutely encouraged
 
@@ -21,3 +22,8 @@ Container version designed for being run on AWS
 
 Instructions on how to install docker and deploying this container on a hosting provider
 
+# Notes
+Plugin dll's can most likely installed by placing them in /home/scp/scp_server/sm_plugins
+
+
+Edits to the dockerfile with something similiar to git-clone --bare to grab these plugins could allow for seamless and automatic installation of plugins
