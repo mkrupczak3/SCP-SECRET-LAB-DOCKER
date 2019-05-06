@@ -19,5 +19,5 @@ Details on how to install servermod plugins with this container, or experiences 
 # Coming soon
 Container version designed for being run on AWS
 
-Instructions on how to installing docker and deploying this container on a hosting provider
+Instructions on how to install docker and deploying this container on a hosting provider
 
