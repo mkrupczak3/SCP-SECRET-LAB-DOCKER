@@ -5,7 +5,15 @@ https://www.docker.com/resources/what-container
 
 The goal of this repo is to provide a containerized version of SCP Secret Lab that can be easily started on many different hosting platforms with minimal configuration required
 
-Requires docker-compose installed to use the docker-compose file for running
+# Prerequisites
+
+Requires docker and docker-compose installed to use the docker-compose file for running
+
+docker installation (debain):
+https://docs.docker.com/install/linux/docker-ce/debian/
+
+docker compose installation:
+https://docs.docker.com/compose/install/
 
 # To run with docker
 
@@ -20,7 +28,7 @@ Details on how to install servermod plugins with this container, or experiences 
 # Coming soon
 Container version designed for being run on AWS
 
-Instructions on how to install docker and deploying this container on a hosting provider
+Instructions on how to deploy this container on a hosting provider
 
 # Notes
 Plugin dll's can most likely installed by placing them in /home/scp/scp_server/sm_plugins
