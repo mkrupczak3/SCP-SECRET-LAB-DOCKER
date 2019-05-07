@@ -48,7 +48,7 @@ ENV FORCE_INSTALL_DIR "/home/scp/scp_server"
 # https://steamdb.info/app/786920/
 # 996560 is dedicated server
 # https://steamdb.info/app/996560/
-
+# entrypoint may be different for
 ENV APPID "786920 -beta linux"
 ENV VALIDATE "validate"
 RUN chmod 777 -R /home/scp/
