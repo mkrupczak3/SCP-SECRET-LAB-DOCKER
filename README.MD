@@ -26,9 +26,7 @@ Pull requests with updated or alternate dockerfile(s), compose files, or impleme
 Details on how to install servermod plugins with this container, or experiences with various hosting providers would also be appreciated
 
 # Coming soon
-Container version designed for being run on AWS
-
-Instructions on how to deploy this container on a hosting provider
+Instructions on how to deploy this container easily on Digital Ocean
 
 # Notes
 Plugin dll's can most likely installed by placing them in /home/scp/scp_server/sm_plugins
