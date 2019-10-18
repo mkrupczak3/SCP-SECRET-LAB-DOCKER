@@ -9,7 +9,7 @@ The goal of this repo is to provide a containerized version of SCP Secret Lab th
 
 Requires docker and docker-compose installed to use the docker-compose file for running
 
-docker installation (debain):
+docker installation (debian):
 https://docs.docker.com/install/linux/docker-ce/debian/
 
 docker compose installation:
