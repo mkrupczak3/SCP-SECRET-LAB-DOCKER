@@ -23,7 +23,7 @@ MOUNT_POINT=/mount/path/here docker-compose up -d
 
 I have been unable to find a easy solution to trigger auto-updates on Dockerhub [whenever a new version of the gameserver is released](https://steamdb.info/app/786920/) [+](https://steamdb.info/app/996560/). 
 
-Please contact me via email with the subject line "SCP SL Docker Out Of Date", and I will trigger a build as soon as possible. 
+Please contact me via email with the subject line "SCP SL Docker Out Of Date", and I will try to trigger a build. Unfortunately DockerHub removed the button to manually trigger builds, so I will need to edit this repo every time I want to trigger a build after an update :(
 
 Alternatively, build the [Dockerfile](https://github.com/mkrupczak3/SCP-SECRET-LAB-DOCKER/blob/master/Dockerfile) [yourself](https://linuxize.com/post/how-to-build-docker-images-with-dockerfile/), make sure you disable build caching, and write a simple cron job or something to kick it to rebuild every day or something.
 
@@ -42,3 +42,4 @@ Plugin dll's can most likely installed by placing them in /home/scp/scp_server/s
 
 
 Edits to the dockerfile with something similiar to git-clone --bare to grab these plugins could allow for seamless and automatic installation of plugins
+
