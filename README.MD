@@ -30,6 +30,9 @@ Alternatively, build the [Dockerfile](https://github.com/mkrupczak3/SCP-SECRET-L
 I've found that the automated build process for this container has been very reliable on Dockerhub, it may be a decent solution for automating the game install on your game server if you are so inclined.
 
 # Contributing
+This README.md and the Dockerfile for this container are available at the following GitHub page:
+[https://github.com/mkrupczak3/SCP-SECRET-LAB-DOCKER](https://github.com/mkrupczak3/SCP-SECRET-LAB-DOCKER)
+
 Pull requests with updated or alternate dockerfile(s), compose files, or implementation tips are absolutely encouraged
 
 Details on how to install servermod plugins with this container, or experiences with various hosting providers would also be appreciated
